@@ -1,13 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+import useData from './hooks/useData';
 import './App.css';
 
-function App() {
+const App = () => {
+	const [loading, data, error] = useData();
+
+	console.table({ loading, data, error });
 	return (
 		<div className="App">
 			<header className="App-header">
 				Menu
 			</header>
+
 		</div>
 	);
 }
