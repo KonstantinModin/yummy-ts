@@ -1,4 +1,5 @@
 import React from 'react';
+import Spinner from './Spinner';
 import useData from './hooks/useData';
 import './App.css';
 
@@ -10,7 +11,9 @@ const App = () => {
 		<div className="App">
 			<header className="App-header">
 				Menu
+
 			</header>
+			<Spinner />
 
 		</div>
 	);
